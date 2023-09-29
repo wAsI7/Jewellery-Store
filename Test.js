@@ -6,7 +6,6 @@ const combineFunc = () => {
     return [...clothes, ...footwear];
 }
 
-
 var combine = combineFunc(clothes, footwear);
 
 console.log(`Combination of Clothes and Footwear is ${combine}`);
@@ -21,6 +20,3 @@ const spreadTest = (allItems) => {
 spreadTest(combine);
 
 console.log(`Combination of Clothes and Footwear is ${combine}`);
-
-
-
