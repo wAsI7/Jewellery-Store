@@ -8,7 +8,9 @@ console.log(paraText.textContent);
 
 var myButton = document.getElementById('button1');
 
-const changeText = () => {
-    
-}
+myButton.addEventListener('click', changeText = () => {
+    headingText.textContent = 'Text Changed with Event Handling';
+});
+
+
 
