@@ -20,10 +20,6 @@ const spreadTest = (allItems) => {
 
 spreadTest(combine);
 
-combine.pop();
-
-combine.push('Boots');
-
 console.log(`Combination of Clothes and Footwear is ${combine}`);
 
 
