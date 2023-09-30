@@ -12,5 +12,7 @@ myButton.addEventListener('click', changeText = () => {
     headingText.textContent = 'Text Changed with Event Handling';
 });
 
+//As we did the above during the course let's do something on own
+//Let's change the para text
 
-
+var myPara = document.querySelector('#myParaTag')

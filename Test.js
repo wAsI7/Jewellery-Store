@@ -9,14 +9,3 @@ const combineFunc = () => {
 var combine = combineFunc(clothes, footwear);
 
 console.log(`Combination of Clothes and Footwear is ${combine}`);
-
-
-const spreadTest = (allItems) => {
-    for(var item of allItems){
-        console.log(`${item} is of type ${typeof(item)}`);
-    }
-}
-
-spreadTest(combine);
-
-console.log(`Combination of Clothes and Footwear is ${combine}`);
