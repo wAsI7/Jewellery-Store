@@ -22,3 +22,13 @@ inputArea.addEventListener('change', updateText = () => {
     console.log(inputArea.value);
     head1.textContent = inputArea.value;
 })
+
+const jsonStr = '{"greetings":"hello"}';
+console.log(jsonStr);
+
+const jsObj = JSON.parse(jsonStr);
+jsObj.greetings = "Hey!!";
+
+console.log(jsObj);
+
+
