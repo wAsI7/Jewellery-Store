@@ -3,9 +3,6 @@
 var headingText = document.getElementById('myHeadingTag');
 console.log(headingText.textContent);
 
-var paraText = document.getElementsByClassName('myParaTag');
-console.log(paraText.textContent);
-
 var myButton = document.getElementById('button1');
 
 myButton.addEventListener('click', changeText = () => {
@@ -15,4 +12,11 @@ myButton.addEventListener('click', changeText = () => {
 //As we did the above during the course let's do something on own
 //Let's change the para text
 
-var myPara = document.querySelector('#myParaTag')
+var paraText = document.getElementById('myParaTag');
+console.log(paraText.textContent);
+
+var myButton2 = document.getElementById('button2');
+
+myButton2.addEventListener('click', changeParaText = () => {
+    paraText.textContent = 'HEY!! Para Text is changed';
+})
