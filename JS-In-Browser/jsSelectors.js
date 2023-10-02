@@ -20,3 +20,5 @@ var myButton2 = document.getElementById('button2');
 myButton2.addEventListener('click', changeParaText = () => {
     paraText.textContent = 'HEY!! Para Text is changed';
 })
+
+//PERFECT
