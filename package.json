@@ -1,0 +1,23 @@
+{
+  "name": "receipt-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wAsI7/Receipt-Maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wAsI7/Receipt-Maker/issues"
+  },
+  "homepage": "https://github.com/wAsI7/Receipt-Maker#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
