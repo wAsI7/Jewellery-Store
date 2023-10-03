@@ -24,11 +24,11 @@ inputArea.addEventListener('change', updateText = () => {
 })
 
 const jsonStr = '{"greetings":"hello"}';
-console.log(jsonStr);
+console.log(`This is JSON ${jsonStr}`);
 
 const jsObj = JSON.parse(jsonStr);
 jsObj.greetings = "Hey!!";
 
-console.log(jsObj);
+console.log(`This is JS Object ${jsObj}`);
 
 
