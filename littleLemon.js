@@ -42,9 +42,7 @@ const getPrices = (taxBoolean) => {
 
 const getDiscount = (taxBoolean, guests) => {
     //getPrices(taxBoolean);
-    if(guests > 0){
-        
+    if(guests > 0 && guests < 30){
+        //Code
     }
 }
-
-getDiscount(true, 20);
