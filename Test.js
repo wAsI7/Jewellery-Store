@@ -9,9 +9,3 @@ weakSet.add(obj);
 
 // Checking if the object is in the WeakSet
 console.log(weakSet.has(obj)); // Output: true
-
-// Removing the object reference
-obj = null;
-
-// The object is automatically removed from the WeakSet
-console.log(weakSet.has(obj)); // Output: false
