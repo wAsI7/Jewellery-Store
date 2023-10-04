@@ -8,4 +8,4 @@ let obj = { message: 'Hello, WeakSet!' };
 weakSet.add(obj);
 
 // Checking if the object is in the WeakSet
-console.log(weakSet.has(obj)); // Output: true
+
