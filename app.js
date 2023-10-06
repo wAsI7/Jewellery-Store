@@ -35,7 +35,7 @@ jwtClient.authorize((err) => {
                 console.log(row);
             });
         } else {
-            console.log('No data found in the Google Sheet.');
+            console.log('No data found in Google Sheet.');
         }
     });
 });
