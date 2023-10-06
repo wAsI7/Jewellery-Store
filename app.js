@@ -2,6 +2,8 @@ const { google } = require('googleapis');
 const sheets = google.sheets('v4');
 const key = require('./credentials.json/sheetKey.json');
 
+var goldPrice18K;
+
 const jwtClient = new google.auth.JWT(
     key.client_email,
     null,
@@ -30,6 +32,7 @@ jwtClient.authorize((err) => {
             console.log('Data from Google Sheet:');
             values.forEach((row) => {
                 console.log(row);
+                goldPrice18K = values;
             });
         } else {
             console.log('No data found in the Google Sheet.');
@@ -37,6 +40,8 @@ jwtClient.authorize((err) => {
     });
     
 });
+
+console.log(goldPrice18K);
 
 const twentyTwoCarat = (price18Carat) => {
     return price = Math.floor(1.221 * price18Carat);
