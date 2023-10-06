@@ -1,8 +1,9 @@
-const jewelleryPrice = (price18Carat) => {
-    var twentyTwoCarat = 1.221 * price18Carat;
-    var twentyFourCarat = 1.332 * price18Carat;
-    console.log(Math.floor(twentyTwoCarat));
-    console.log(Math.floor(twentyFourCarat));
+const twentyTwoCarat = (price18Carat) => {
+    return price = 1.221 * price18Carat;
+}
+
+const twentyFourCarat = (price18Carat) => {
+    return price = 1.332 * price18Carat;
 }
 
 jewelleryPrice(100);
