@@ -31,7 +31,9 @@ body {
 
 
 .banner h1{
-    margin: 15vh 0; /* Add margin between heading and subheading */
+    margin: 15vh 0;
+    font-size: 48px;
+    font-weight: 400;
 }
 
 
