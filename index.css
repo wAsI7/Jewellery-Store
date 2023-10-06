@@ -50,6 +50,7 @@ body {
 .container p{
     text-align: center;
     font-size: 18px;
+    line-height: 24px;
 }
 
 .best-sellers {
@@ -89,11 +90,11 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     text-align: center;
     margin-top: 30px;
-    padding: 20px 0;
+    padding: 5px 0;
     /* position: fixed; */ /* Remove this line to make the footer not sticky */
     /* bottom: 0; */ /* Remove this line to make the footer not sticky */
     width: 100%;
