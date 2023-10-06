@@ -28,17 +28,16 @@ jwtClient.authorize((err) => {
             return;
         }
         const values = response.data.values;
+        goldPrice18K = response.data.values;
         if (values.length) {
             console.log('Data from Google Sheet:');
             values.forEach((row) => {
                 console.log(row);
-                goldPrice18K = values;
             });
         } else {
             console.log('No data found in the Google Sheet.');
         }
     });
-    
 });
 
 console.log(goldPrice18K);
