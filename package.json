@@ -19,5 +19,8 @@
   "homepage": "https://github.com/wAsI7/Receipt-Maker#readme",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "googleapis": "^126.0.1"
   }
 }

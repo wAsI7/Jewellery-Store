@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "receipt-maker-jewellery",
+  "private_key_id": "eacaf96dda488c23c4dcfbd5deae7451b8fa78a9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC22xE4eX55ulKs\nOEw73iwILvdDKVsn99tg6F9WCVtK1h3pkNzfDdoDaDozIFEwUD2IAtXdKXZaMkmn\nQvFbkKoQSxrKaGoaTU+cknWCPcN3OLI807Hi6yNXXNNi73i/WLR/YD9WFF39pfI3\nWrgsg6wz7tGhflBJTxp+D0Nb/Os2wz+e6gSIzdGgOJGM8FrqSXTkDx5tbMLXjEPF\nFeenTCxTTQ8mlcYTHsc5J8Gie4YRuS3Bl23PtyuTMaCZky5SN6ytoeSVaqbbPkUC\npnLlNIGLt3nWbm5RnNjBzuhJGsaROe5Oe5+1KTcr/4ILblXLkSQORH7Ibdp6igyt\nJyRz4EG5AgMBAAECggEAMAWlZqMFs7tate8NGlX1U2reNi24ymzeGPu9+e74IlXM\nQkhwsUXGgUmQq1er6tfP6RXxi6U1d2eojzxV/bmm6COJVCoK34B5TYHrSXqmCHwD\n11SzbYhaXjm7LEr+96W4tZEV4Sn1K0W3MJFrOAmWoobwWAy/0hjruLqScqigL1+y\nRheAEaB6HjIeDBcJPEUzjMxN9CLCCVrUHe0krJVtDKUz7Iv2DUzxkRjBAgDlNufM\n5vG2R+inZNPsTH69scxRfAIwEJGDc1nW5t86sA7vVHFVJGwraL1NUoTf6Fq/OuUO\nL2b0bEscp4Xg4PLPZod+/ePGKiu95XMEXBegNAE49wKBgQDyf+XAJVV42pMiiAZF\nQENQSvjjKZyWbhnhA1/0GwPdRwOHw3Z8BWTqzey3JCovn1DgX1CcyaJWK4sQ2wal\noM/5kwi2utZgqJeYoSmh42OFsHIHON5KWF54y0kDsCfozSJk6AQ6fL8FTUanQ1/j\nFvvLq648uRJPOFRtGRUNuP0CXwKBgQDBCSA2a5F1HnBtZv2nVz60As3rPMg8WtuP\nBGpvijLZ9ACFF8nLGDgzajybzm/PkSijUEFejaoM3pWFjphmgUnIxSdEZ/XxTOQ7\nbwNoiW8BJV65dJp83FNtghphA2AuCaMxXtWE7XU5d++1545ozy3iCUIu50RHx+k/\n1ZMyOs2i5wKBgQDBpGnlhqp7CCdIAtDnCcr22fdnBnp5EVBvAw/jUJNEZommJup9\nXJ1adrfZAvMA9jpSASrRGJ4eK0UwX4YuSnzo8YWazRWVN+teQQuKr5ZwUhasN7gi\nK/C8irAyVr93wh797tw5jBXJeQy7UizGnTrSR7Sp3quFQRkByW6rd5XqBwKBgDPh\njgTSWF/P9IuS2K23JyUec9W7ml2OVeBUYX7k99HYYKNkx1mMgt5euTdu/mIdM3zh\nPxB4prGayTkCIDe8m+YYBvu9rT5TWiwXJCVeerUmJBVYH4Vbehi+lPRqAdmdwXyt\nblmxsIXnlEehmobU2BIeRulwQsvAERKVBmDDqS0VAoGBAMsJyZl1owl7ZvyvTuY9\nJFTyEdHWLnBpP8S34bgIAF5Ex83CVhypXDqwp4rTqMVRtBJet0x2Hx8BzD6zlD/l\nPQ+prbvusCUpXMa0CdsuHlW/Z56gW25gVnYC9RNdcIkhKAqJCy6CNrcZkkkHkwu+\nbJMFZJY3InwEVbMPRz/Yv2Ce\n-----END PRIVATE KEY-----\n",
+  "client_email": "receipt-maker@receipt-maker-jewellery.iam.gserviceaccount.com",
+  "client_id": "112310776664197348453",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/receipt-maker%40receipt-maker-jewellery.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
