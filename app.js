@@ -35,8 +35,8 @@ jwtClient.authorize((err) => {
             console.log('No data found in the Google Sheet.');
         }
     });
+    
 });
-
 
 const twentyTwoCarat = (price18Carat) => {
     return price = Math.floor(1.221 * price18Carat);
