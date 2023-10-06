@@ -21,7 +21,7 @@ jwtClient.authorize((err) => {
     sheets.spreadsheets.values.get({
         auth: jwtClient,
         spreadsheetId: '1LYmg6F0AtZelZC2RdITRioRGJigqFLMC3saVDzoeV08',
-        range: 'Price' // Specify the sheet name or range
+        range: 'Price'
     }, (err, response) => {
         if (err) {
             console.error('The API returned an error:', err);
