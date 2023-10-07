@@ -2,7 +2,8 @@ const { google } = require('googleapis');
 const sheets = google.sheets('v4');
 const key = require('./credentials.json/sheetKey.json');
 
-var goldPrice18K;
+let goldPrice18K;
+let values;
 
 const jwtClient = new google.auth.JWT(
     key.client_email,
@@ -27,7 +28,7 @@ jwtClient.authorize((err) => {
             console.error('The API returned an error:', err);
             return;
         }
-        const values = response.data.values;
+        values = response.data.values;
         goldPrice18K = response.data.values;
         if (values.length) {
             console.log('Data from Google Sheet:');
@@ -40,13 +41,23 @@ jwtClient.authorize((err) => {
     });
 });
 
-console.log(goldPrice18K);
-
-const twentyTwoCarat = (price18Carat) => {
-    return price = Math.floor(1.221 * price18Carat);
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const twentyFourCarat = (price18Carat) => {
-    return price = Math.floor(1.332 * price18Carat);
-}
+
+wait(2000).then(() => {
+    console.log(goldPrice18K);
+    const twentyTwoCarat = (price18Carat) => {
+        return price = Math.floor(1.221 * price18Carat);
+    }
+    
+    const twentyFourCarat = (price18Carat) => {
+        return price = Math.floor(1.332 * price18Carat);
+    }
+    
+    var ttcp = twentyTwoCarat(goldPrice18K);
+    console.log(ttcp);
+});
+
 
