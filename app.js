@@ -15,8 +15,7 @@ jwtClient.authorize((err) => {
     if (err) {
         console.error('Authorization failed:', err);
         return;
-}
-  // Access your Google Sheet here
+    }
 
     sheets.spreadsheets.values.get({
         auth: jwtClient,
@@ -27,13 +26,16 @@ jwtClient.authorize((err) => {
             console.error('The API returned an error:', err);
             return;
         }
-        values = response.data.values;
+
         goldPrice18K = response.data.values;
-        if (values.length) {
+
+        if (goldPrice18K.length) {
             console.log('Data from Google Sheet:');
-            values.forEach((row) => {
+            goldPrice18K.forEach((row) => {
                 console.log(row);
             });
+
+            delayedExecution();
         } else {
             console.log('No data found in Google Sheet.');
         }
@@ -42,22 +44,18 @@ jwtClient.authorize((err) => {
 
 async function delayedExecution() {
     await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    // Now you can safely use goldPrice18K here
     console.log(goldPrice18K);
+
+    const ttcp = twentyTwoCarat(goldPrice18K);
+    //console.log(ttcp);
 }
 
-delayedExecution();
-
-console.log(goldPrice18K);
-
 const twentyTwoCarat = (price18Carat) => {
-    return price = Math.floor(1.221 * price18Carat);
+    return Math.floor(1.221 * price18Carat);
 }
 
 const twentyFourCarat = (price18Carat) => {
-    return price = Math.floor(1.332 * price18Carat);
+    return Math.floor(1.332 * price18Carat);
 }
-
-var ttcp = twentyTwoCarat(goldPrice18K);
-console.log(ttcp);
-
-
