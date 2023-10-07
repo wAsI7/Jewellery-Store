@@ -48,16 +48,17 @@ function wait(ms) {
 
 wait(2000).then(() => {
     console.log(goldPrice18K);
-    const twentyTwoCarat = (price18Carat) => {
-        return price = Math.floor(1.221 * price18Carat);
-    }
-    
-    const twentyFourCarat = (price18Carat) => {
-        return price = Math.floor(1.332 * price18Carat);
-    }
-    
-    var ttcp = twentyTwoCarat(goldPrice18K);
-    console.log(ttcp);
 });
+
+const twentyTwoCarat = (price18Carat) => {
+    return price = Math.floor(1.221 * price18Carat);
+}
+
+const twentyFourCarat = (price18Carat) => {
+    return price = Math.floor(1.332 * price18Carat);
+}
+
+var ttcp = twentyTwoCarat(goldPrice18K);
+console.log(ttcp);
 
 
