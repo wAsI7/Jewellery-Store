@@ -45,11 +45,16 @@ jwtClient.authorize((err) => {
 async function delayedExecution() {
     await new Promise(resolve => setTimeout(resolve, 2000));
     
-    // Now you can safely use goldPrice18K here
-    console.log(goldPrice18K);
-
+    // Calculate prices for 22 carat and 24 carat
     const ttcp = twentyTwoCarat(goldPrice18K);
-    //console.log(ttcp);
+    const tfcp = twentyFourCarat(goldPrice18K);
+    
+    // Update DOM elements with calculated prices
+    const twentyTwoCaratPriceElement = document.getElementById('twentyTwoCaratPrice');
+    const twentyFourCaratPriceElement = document.getElementById('twentyFourCaratPrice');
+    
+    twentyTwoCaratPriceElement.textContent = `Price for 22 carat: ${ttcp}`;
+    twentyFourCaratPriceElement.textContent = `Price for 24 carat: ${tfcp}`;
 }
 
 const twentyTwoCarat = (price18Carat) => {

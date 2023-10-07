@@ -28,21 +28,17 @@ body {
     text-align: center;
 }
 
-
-
 .banner h1{
     margin: 15vh 0;
     font-size: 48px;
     font-weight: 400;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
 
 .container h2{
     text-align: center;
