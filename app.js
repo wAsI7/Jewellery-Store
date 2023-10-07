@@ -3,7 +3,6 @@ const sheets = google.sheets('v4');
 const key = require('./credentials.json/sheetKey.json');
 
 let goldPrice18K;
-let values;
 
 const jwtClient = new google.auth.JWT(
     key.client_email,
@@ -41,14 +40,14 @@ jwtClient.authorize((err) => {
     });
 });
 
-function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+async function delayedExecution() {
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    console.log(goldPrice18K);
 }
 
+delayedExecution();
 
-wait(2000).then(() => {
-    console.log(goldPrice18K);
-});
+console.log(goldPrice18K);
 
 const twentyTwoCarat = (price18Carat) => {
     return price = Math.floor(1.221 * price18Carat);
