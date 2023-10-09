@@ -2,6 +2,10 @@ const { google } = require('googleapis');
 const sheets = google.sheets('v4');
 const key = require('./credentials.json/sheetKey.json');
 
+const express = require('express');
+const app = express();
+const port = 3000;
+
 let goldPrice18K;
 
 const jwtClient = new google.auth.JWT(
@@ -45,16 +49,27 @@ jwtClient.authorize((err) => {
 async function delayedExecution() {
     await new Promise(resolve => setTimeout(resolve, 2000));
     
-    // Calculate prices for 22 carat and 24 carat
-    const ttcp = twentyTwoCarat(goldPrice18K);
-    const tfcp = twentyFourCarat(goldPrice18K);
-    
-    // Update DOM elements with calculated prices
-    const twentyTwoCaratPriceElement = document.getElementById('twentyTwoCaratPrice');
-    const twentyFourCaratPriceElement = document.getElementById('twentyFourCaratPrice');
-    
-    twentyTwoCaratPriceElement.textContent = `Price for 22 carat: ${ttcp}`;
-    twentyFourCaratPriceElement.textContent = `Price for 24 carat: ${tfcp}`;
+    // Your function to calculate the price
+    const calculatePrice = () => {
+        // For example, calculate the price based on some logic
+        const basePrice = 100;
+        const calculatedPrice = basePrice * 1.5;
+
+        return calculatedPrice;
+    }
+
+    app.get('/', (req, res) => {
+        const calculatedPrice = calculatePrice();
+        res.send(`
+            <script>
+                document.getElementById('displayedPrice').textContent = 'Calculated Price: Rs ${calculatedPrice.toFixed(2)}';
+            </script>
+        `);
+    });
+
+    app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+    });
 }
 
 const twentyTwoCarat = (price18Carat) => {
