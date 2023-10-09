@@ -1,12 +1,12 @@
-function fetchData(callback) {
+const fetchData = (callback) => {
     // Simulate fetching data from an API after 2 seconds
-    setTimeout(function() {
+    setTimeout(() => {
         const data = 'Data fetched successfully';
         callback(data); // Call the callback function and pass the fetched data
     }, 2000);
 }
 
-function processData(data) {
+const processData = (data) => {
     console.log('Processing data:', data);
 }
 
