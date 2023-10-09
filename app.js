@@ -48,13 +48,30 @@ async function delayedExecution() {
     // Calculate prices for 22 carat and 24 carat
     const ttcp = twentyTwoCarat(goldPrice18K);
     const tfcp = twentyFourCarat(goldPrice18K);
-    
-    // Update DOM elements with calculated prices
-    const twentyTwoCaratPriceElement = document.getElementById('twentyTwoCaratPrice');
-    const twentyFourCaratPriceElement = document.getElementById('twentyFourCaratPrice');
-    
-    twentyTwoCaratPriceElement.textContent = `Price for 22 carat: ${ttcp}`;
-    twentyFourCaratPriceElement.textContent = `Price for 24 carat: ${tfcp}`;
+    // Your function to calculate the price
+    const calculatePrice = () => {
+        // For example, calculate the price based on some logic
+        const basePrice = 100;
+        const calculatedPrice = basePrice * 1.5;
+
+        return calculatedPrice;
+    }
+
+    // Display the calculated price in the HTML element
+    const displayCalculatedPrice = () => {
+        const displayedPriceElement = document.getElementsByClassName('displayedPrice')
+
+        if (displayedPriceElement) {
+            const calculatedPrice = calculatePrice();
+            displayedPriceElement.textContent = `Calculated Price: Rs ${calculatedPrice.toFixed(2)}`;
+        } else {
+            console.error('Element with id "displayedPrice" not found.');
+        }
+}
+
+// Call the function to display the calculated price when the script is loaded
+displayCalculatedPrice();
+
 }
 
 const twentyTwoCarat = (price18Carat) => {
