@@ -12,3 +12,14 @@ const processData = (data) => {
 
 // Usage of the callback function
 fetchData(processData); // Pass processData function as a callback
+
+const fetchData2 = (callback2) => {
+    const data = 'Data Fetched succesfully';
+    callback2(data);
+}
+
+const processData2 = (data) => {
+    console.log(`Processing data: ${data}`);
+}
+
+fetchData2(processData2);
