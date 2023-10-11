@@ -1,6 +1,6 @@
 const fetchData = new Promise((resolve, reject) => {
     setTimeout(() => {
-        const Data = 'The Data is fetched successfully';
+        const Data = 'Example String';
         resolve(Data);
     }, 2000);
 });
