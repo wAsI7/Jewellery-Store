@@ -11,5 +11,3 @@ fetchData.then((result) => {
     console.error('Error:', error);
 });
 
-
-
