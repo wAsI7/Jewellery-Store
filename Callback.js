@@ -10,4 +10,3 @@ fetchData.then((result) => {
 }).catch((error) => {
     console.error('Error:', error);
 });
-
