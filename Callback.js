@@ -3,6 +3,3 @@ const fetchData = new Promise((resolve, reject) => {
         const Data = 'Data Fetched';
         resolve(Data);
 
-
-
-        
