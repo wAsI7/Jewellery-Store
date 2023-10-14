@@ -12,22 +12,4 @@ fetchData.then((result) => {
     console.error('Error:', error);
 });
 
-//Database
-dyetonsolution_dyetondb
-
-//Users
-dyetonsolution_dbuser
-B3$8C0v}M-jL
-
-
-//Website
-dyetonsolution
-vhqkhNxlaCnq%9KPg6
-
-dyetonsolutions@gmail.com
-
-
-nitra32_in
-
-KcdQDkJcQ8
 
