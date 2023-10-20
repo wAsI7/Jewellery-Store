@@ -21,3 +21,10 @@ fetchData.then((result) => {
   })();
 
 //console.log(x); Cannot Access here
+
+let result = (function () {
+    let tempVariable = "I am temporary!";
+    return tempVariable + " I am returned!";
+})();
+
+console.log(result); // "I am temporary! I am returned!"
