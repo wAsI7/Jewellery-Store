@@ -17,3 +17,5 @@ fetchData.then((result) => {
 let { x, y } = { x: 3, y: 4 };
 
 console.log(x);
+
+console.log(y);
