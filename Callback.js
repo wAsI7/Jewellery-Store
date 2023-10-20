@@ -28,3 +28,7 @@ let result = (function () {
 })();
 
 console.log(result); // "I am temporary! I am returned!"
+
+(function (x, y) {
+    console.log(x + y);
+  })(5, 10); // Outputs: 15  
