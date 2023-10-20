@@ -11,3 +11,10 @@ fetchData.then((result) => {
 }).catch((error) => {
     console.error('Error:', error);
 });
+
+//Hoisting
+console.log(x);
+
+var x = 5;
+
+console.log(x);
