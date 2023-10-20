@@ -12,10 +12,5 @@ fetchData.then((result) => {
     console.error('Error:', error);
 });
 
-//Hoisting
+//Exception Handling in JS
 
-let { x, y } = { x: 3, y: 4 };
-
-console.log(x);
-
-console.log(y);
