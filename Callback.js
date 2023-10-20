@@ -12,4 +12,12 @@ fetchData.then((result) => {
     console.error('Error:', error);
 });
 
-//Strict Mode
+//IIFE
+
+(function () {
+    // IIFE body
+    var x = "IIFE executed!"
+    console.log(x);
+  })();
+
+//console.log(x); Cannot Access here
