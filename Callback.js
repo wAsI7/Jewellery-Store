@@ -13,8 +13,7 @@ fetchData.then((result) => {
 });
 
 //Hoisting
-console.log(x);
 
-var x = 5;
+let { x, y } = { x: 3, y: 4 };
 
 console.log(x);
